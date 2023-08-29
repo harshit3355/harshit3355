@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @harshit3355
 - 👀 I’m interested in Computer Languages.
-- 🌱 I’m currently learning C.
+- 🌱 I’m currently learning new technologies.
 - 💞️ I’m looking to collaborate on mini projects.
 - 📫 How to reach me 21BCA1085@cuchd.in
 
