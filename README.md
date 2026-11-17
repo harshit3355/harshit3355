@@ -40,7 +40,7 @@ them on Medium, and contribute fixes upstream.
 - **Azure + AWS in production**: Container Apps, ECS Fargate, Terraform, GitHub Actions / Azure DevOps, OIDC, Entra SSO.
 - **AI infrastructure on regulated data**: Azure OpenAI and AWS Bedrock, ISO 27001 evidence, SOC 2 preparation.
 - **Certified**: AWS CloudOps Engineer – Associate, HashiCorp Terraform Associate (004).
-- **Proof beyond the day job**: 18 benchmarked open-source prototypes, 20+ PRs merged upstream, 10 technical articles.
+- **Proof beyond the day job**: an installable Argo Rollouts plugin in Go, 18 benchmarked open-source prototypes, 20+ PRs merged upstream, 10 technical articles.
 
 📬 [harshitnagila3355@gmail.com](mailto:harshitnagila3355@gmail.com) · [LinkedIn](https://linkedin.com/in/harshit555)
 
@@ -67,6 +67,14 @@ Each repo has its architecture diagram, the benchmark and the limits in its READ
 - [Your Chaos Test Passed. Which Guarantee Did It Actually Check?](https://medium.com/@harshitnagila555/your-chaos-test-passed-which-guarantee-did-it-actually-check-b34b55fc8353)
 
 </details>
+
+---
+
+## 🧰 Tools you can install
+
+| Project | What it does |
+| --- | --- |
+| [**rollouts-plugin-metric-sequential**](https://github.com/harshit3355/rollouts-plugin-metric-sequential) | Argo Rollouts metric plugin in Go. Aborts a canary when Prometheus error counts show a real regression, using a sequential test that stays valid however often Argo checks it. **Worst false rollback 1.7%, against 30.6% for a z-test checked every interval; a 2x regression is caught in about 7 intervals.** A kind end-to-end test in CI runs it inside the real Argo Rollouts controller. [v0.1.0](https://github.com/harshit3355/rollouts-plugin-metric-sequential/releases/tag/v0.1.0) ships with SHA-256 sums and SLSA build provenance. |
 
 ---
 
@@ -123,6 +131,21 @@ Also: [gh-oidc-trust-fixtures](https://github.com/harshit3355/gh-oidc-trust-fixt
 ## 🗺️ Architecture diagrams
 
 Every project ships its architecture as a diagram. Click one to open it, then drag to pan and scroll to zoom.
+
+<details>
+<summary><b>rollouts-plugin-metric-sequential</b>: anytime-valid canary analysis inside Argo Rollouts</summary>
+
+```mermaid
+flowchart LR
+  P[Prometheus] -->|bad and total events,<br/>canary and baseline,<br/>since last measurement| R[Plugin Run]
+  S[Previous measurement metadata:<br/>test state + window end] --> R
+  R --> T[Sequential test<br/>mixture likelihood ratio<br/>H0: canary rate <= 1.1 x baseline]
+  T -->|e-value >= 1/alpha| F[Failed: Rollout aborts]
+  T -->|otherwise| OK[Successful: Rollout continues]
+  T --> S2[New measurement metadata:<br/>state, e-value, window counts]
+```
+
+</details>
 
 <details>
 <summary><b>aws-ecs-platform-blueprint</b>: Terraform + ECS Fargate platform on AWS</summary>
