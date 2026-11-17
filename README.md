@@ -75,6 +75,13 @@ Each repo has its architecture diagram, the benchmark and the limits in its READ
 18 projects. Each one takes a single failure mode, builds a working prototype, and measures it against a
 baseline on a synthetic or simulated benchmark. Every README states the method, the numbers and the limits.
 
+<p align="center">
+  <a href="https://github.com/harshit3355/policy-synapse"><img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/pin-policy-synapse.svg" alt="policy-synapse" width="49%" /></a>
+  <a href="https://github.com/harshit3355/hephaestus-ledger"><img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/pin-hephaestus-ledger.svg" alt="hephaestus-ledger" width="49%" /></a>
+  <a href="https://github.com/harshit3355/aegis-nexus"><img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/pin-aegis-nexus.svg" alt="aegis-nexus" width="49%" /></a>
+  <a href="https://github.com/harshit3355/chaos-witness"><img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/pin-chaos-witness.svg" alt="chaos-witness" width="49%" /></a>
+</p>
+
 **Security, supply chain and compliance**
 
 | Project | What it does |
@@ -594,10 +601,12 @@ I write up each project on [Medium](https://medium.com/@harshitnagila555): the p
 ## 📊 GitHub activity
 
 <div align="center">
-  <img src="https://www.gitskins.com/api/stats?username=harshit3355&theme=midnight" alt="GitHub stats" height="180" />
-  <img src="https://www.gitskins.com/api/languages?username=harshit3355&theme=midnight" alt="Top languages" height="180" />
-  <br/>
-  <img src="https://www.gitskins.com/api/streak?username=harshit3355&theme=midnight" alt="Contribution streak" height="150" />
+  <img src="https://www.gitskins.com/api/premium-card?username=harshit3355&theme=midnight" alt="GitSkins profile card" width="80%" />
+  <br/><br/>
+  <img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/stats.svg" alt="GitHub stats" width="49%" />
+  <img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/top-langs.svg" alt="Top languages" width="49%" />
+  <br/><br/>
+  <img src="https://streak-stats.demolab.com/?user=harshit3355&background=0F172A&ring=7C3AED&fire=70A5FD&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=70A5FD&sideLabels=A5B4FC&dates=94A3B8&stroke=1E3A8A&hide_border=true&border_radius=12" alt="Contribution streak" width="70%" />
   <br/><br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/harshit3355/harshit3355/output/github-snake-dark.svg" />
@@ -615,6 +624,6 @@ Former GDSC Cloud Lead: taught cloud to 500+ students through hands-on workshops
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:1e3a8a,100:0f172a&height=120&section=footer" alt="" width="100%" />
 
-<sub>Widgets: [GitSkins](https://www.gitskins.com) (Midnight) · [capsule-render](https://github.com/kyechan99/capsule-render) · [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) · [Platane/snk](https://github.com/Platane/snk)</sub>
+<sub>Widgets: [GitSkins](https://www.gitskins.com) (Midnight) · [capsule-render](https://github.com/kyechan99/capsule-render) · [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) · [github-readme-stats](https://github.com/stats-organization/github-readme-stats-action) · [streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) · [Platane/snk](https://github.com/Platane/snk)</sub>
 
 </div>
