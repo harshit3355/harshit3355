@@ -75,6 +75,7 @@ Each repo has its architecture diagram, the benchmark and the limits in its READ
 | Project | What it does |
 | --- | --- |
 | [**rollouts-plugin-metric-sequential**](https://github.com/harshit3355/rollouts-plugin-metric-sequential) | Argo Rollouts metric plugin in Go. Aborts a canary when Prometheus error counts show a real regression, using a sequential test that stays valid however often Argo checks it. **Worst false rollback 1.7%, against 30.6% for a z-test checked every interval; a 2x regression is caught in about 7 intervals.** A kind end-to-end test in CI runs it inside the real Argo Rollouts controller. [v0.1.0](https://github.com/harshit3355/rollouts-plugin-metric-sequential/releases/tag/v0.1.0) ships with SHA-256 sums and SLSA build provenance. |
+| [**vpa-recommender-oom-budget**](https://github.com/harshit3355/vpa-recommender-oom-budget) | Alternative Vertical Pod Autoscaler recommender in Go. You set an OOM-kill budget and it sizes each container's memory to meet it, with one margin calibrated on the whole fleet's history. On a held-out sample of Google's public Borg trace (3,179 tasks), **asked for 0.01 OOM kills per container-day, got 0.0101; asked 0.003, got 0.0030.** It does not save memory: at the same OOM rate it needs within 2 to 4% of what VPA's and KRR's defaults need. A kind end-to-end test in CI runs it with the real VPA 1.8.1 updater and admission controller. [v0.1.0](https://github.com/harshit3355/vpa-recommender-oom-budget/releases/tag/v0.1.0) ships binaries, a container image, SHA-256 sums and SLSA build provenance. |
 
 ---
 
@@ -143,6 +144,21 @@ flowchart LR
   T -->|e-value >= 1/alpha| F[Failed: Rollout aborts]
   T -->|otherwise| OK[Successful: Rollout continues]
   T --> S2[New measurement metadata:<br/>state, e-value, window counts]
+```
+
+</details>
+
+<details>
+<summary><b>vpa-recommender-oom-budget</b>: VPA memory sized for an OOM-kill budget</summary>
+
+```mermaid
+flowchart LR
+  P["Prometheus<br/>cAdvisor working set"] -->|"hourly peaks, 14 days"| R["oom-budget recommender"]
+  K["Pods<br/>lastState OOMKilled"] -->|"OOM kills"| C[("ConfigMap<br/>OOM history")]
+  C --> R
+  R --> Q["One fleet-wide margin q<br/>from pooled surprises:<br/>P(next-hour peak over limit) = budget / 24"]
+  Q --> V["VPA status.recommendation<br/>memory = 14-day peak x (1 + q)"]
+  V --> U["VPA updater and admission controller<br/>resize the pods"]
 ```
 
 </details>
