@@ -539,11 +539,15 @@ flowchart LR
 
 ## 🤝 Upstream open-source contributions
 
-**20+ pull requests merged** into other people's projects.
+**30+ pull requests merged** into other people's projects.
 [See every merged PR →](https://github.com/search?q=author%3Aharshit3355+is%3Apr+is%3Amerged+-user%3Aharshit3355&type=pullrequests)
 
 | Project | Contribution |
 | --- | --- |
+| [kamranzafar/flipjack](https://github.com/kamranzafar/flipjack/pull/27) | Runnable Spring Boot example app, built and tested in CI |
+| [gdt050579/AppCUI-rs](https://github.com/gdt050579/AppCUI-rs/pull/296) | Window guide with real terminal screenshots and an example app |
+| [GoDiao/dreamcoder](https://github.com/GoDiao/dreamcoder/pull/260) | Provider-preset tutorial in English and Chinese |
+| [kathennn/stream-clip-maker](https://github.com/kathennn/stream-clip-maker/pull/6) | Side-effect-free preview mode and numbered moment selection |
 | [scylladb/python-driver](https://github.com/scylladb/python-driver/pull/1273) | Set the Python 3 language level for the Cython build |
 | [Consolonia/Consolonia](https://github.com/Consolonia/Consolonia/pull/735) | CI: NativeAOT smoke test |
 | [Kareadita/Kavita](https://github.com/Kareadita/Kavita/pull/4972) | Fix seams between images in the webtoon reader |
