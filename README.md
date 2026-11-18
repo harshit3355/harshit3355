@@ -40,7 +40,7 @@ them on Medium, and contribute fixes upstream.
 - **Azure + AWS in production**: Container Apps, ECS Fargate, Terraform, GitHub Actions / Azure DevOps, OIDC, Entra SSO.
 - **AI infrastructure on regulated data**: Azure OpenAI and AWS Bedrock, ISO 27001 evidence, SOC 2 preparation.
 - **Certified**: AWS CloudOps Engineer – Associate, HashiCorp Terraform Associate (004).
-- **Proof beyond the day job**: an installable Argo Rollouts plugin in Go, 18 benchmarked open-source prototypes, 20+ PRs merged upstream, 10 technical articles.
+- **Proof beyond the day job**: two installable Kubernetes tools in Go (an Argo Rollouts canary plugin and a Vertical Pod Autoscaler memory recommender), 18 benchmarked open-source prototypes, 20+ PRs merged upstream, 10 technical articles.
 
 📬 [harshitnagila3355@gmail.com](mailto:harshitnagila3355@gmail.com) · [LinkedIn](https://linkedin.com/in/harshit555)
 
