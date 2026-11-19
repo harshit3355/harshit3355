@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e3a8a,100:7c3aed&height=230&section=header&text=Harshit%20Nagila&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=DevOps%20%C2%B7%20Cloud%20%C2%B7%20SRE%20%C2%B7%20DevSecOps&descSize=20&descAlignY=58&animation=fadeIn" alt="Harshit Nagila: DevOps, Cloud, SRE, DevSecOps" width="100%" />
 
-<a href="#-pick-your-path"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=70A5FD&center=true&vCenter=true&width=720&height=50&lines=3+years+running+cloud+infrastructure+in+production;Azure+OpenAI+%2B+AWS+Bedrock+on+regulated+data;18+open-source+research+prototypes%2C+each+benchmarked;20%2B+pull+requests+merged+upstream;Terraform+%C2%B7+Kubernetes+%C2%B7+GitHub+Actions+%C2%B7+OIDC" alt="Typing intro: 3 years running cloud infrastructure in production; Azure OpenAI and AWS Bedrock on regulated data; 18 open-source research prototypes; 20+ pull requests merged upstream" /></a>
+<a href="#-pick-your-path"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=70A5FD&center=true&vCenter=true&width=720&height=50&lines=3+years+running+cloud+infrastructure+in+production;Azure+OpenAI+%2B+AWS+Bedrock+on+regulated+data;18+open-source+research+prototypes%2C+each+benchmarked;30%2B+pull+requests+merged+upstream;Terraform+%C2%B7+Kubernetes+%C2%B7+GitHub+Actions+%C2%B7+OIDC" alt="Typing intro: 3 years running cloud infrastructure in production; Azure OpenAI and AWS Bedrock on regulated data; 18 open-source research prototypes; 30+ pull requests merged upstream" /></a>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-0b1f3a?style=for-the-badge&logo=netlify&logoColor=white)](https://harshit-portfolio-3355.netlify.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/harshit555)
@@ -560,6 +560,10 @@ flowchart LR
 
 | Project | Contribution |
 | --- | --- |
+| [daniel-b92/bruno-vs-code-extension](https://github.com/daniel-b92/bruno-vs-code-extension/pull/413) | Recursive, configurable sequence normalization in the collection explorer |
+| [PreethamNoelP/checkride](https://github.com/PreethamNoelP/checkride/pull/22) | Document every detected sink, checked against the source |
+| [RakTikoo/ci-command-truth](https://github.com/RakTikoo/ci-command-truth/pull/6) | Test fixtures for Python tooling commands in CI |
+| [dlealvilla/local-ai-stack](https://github.com/dlealvilla/local-ai-stack/pull/43) | Document the runtime override environment variables |
 | [kamranzafar/flipjack](https://github.com/kamranzafar/flipjack/pull/27) | Runnable Spring Boot example app, built and tested in CI |
 | [gdt050579/AppCUI-rs](https://github.com/gdt050579/AppCUI-rs/pull/296) | Window guide with real terminal screenshots and an example app |
 | [GoDiao/dreamcoder](https://github.com/GoDiao/dreamcoder/pull/260) | Provider-preset tutorial in English and Chinese |
