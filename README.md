@@ -565,7 +565,8 @@ flowchart LR
 | [komodorio/helm-dashboard](https://github.com/komodorio/helm-dashboard/pull/775) | Report health for Pods that are Running, Succeeded or Failed |
 | [kubecolor/kubecolor](https://github.com/kubecolor/kubecolor/pull/406) | Stop coloring table rows of only numbers as headers |
 | [yonahd/kor](https://github.com/yonahd/kor/pull/652) | Look up RoleBinding ServiceAccount subjects in their own namespace |
-| [emreocell/Praxi-Bot](https://github.com/emreocell/Praxi-Bot/pull/434) | CI check that every guide page is linked from the guide index ([+ UI tests](https://github.com/emreocell/Praxi-Bot/pull/523)) |
+| [provlift/provlift](https://github.com/provlift/provlift/pull/119) | CI: golangci-lint with a pinned version |
+| [emreocell/Praxi-Bot](https://github.com/emreocell/Praxi-Bot/pull/540) | Winget manifest templates for the Windows installer, plus a [CI check for unlinked guide pages](https://github.com/emreocell/Praxi-Bot/pull/434), [safe display of control characters in names](https://github.com/emreocell/Praxi-Bot/pull/604) and [UI tests](https://github.com/emreocell/Praxi-Bot/pull/523) |
 | [daniel-b92/bruno-vs-code-extension](https://github.com/daniel-b92/bruno-vs-code-extension/pull/413) | Recursive, configurable sequence normalization in the collection explorer |
 | [PreethamNoelP/checkride](https://github.com/PreethamNoelP/checkride/pull/22) | Document every detected sink, checked against the source |
 | [RakTikoo/ci-command-truth](https://github.com/RakTikoo/ci-command-truth/pull/6) | Test fixtures for Python tooling commands in CI |
