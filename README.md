@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e3a8a,100:7c3aed&height=230&section=header&text=Harshit%20Nagila&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=DevOps%20%C2%B7%20Cloud%20%C2%B7%20SRE%20%C2%B7%20DevSecOps&descSize=20&descAlignY=58&animation=fadeIn" alt="Harshit Nagila: DevOps, Cloud, SRE, DevSecOps" width="100%" />
 
-<a href="#-pick-your-path"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=70A5FD&center=true&vCenter=true&width=720&height=50&lines=3+years+running+cloud+infrastructure+in+production;Azure+OpenAI+%2B+AWS+Bedrock+on+regulated+data;18+open-source+research+prototypes%2C+each+benchmarked;40%2B+pull+requests+merged+upstream;Terraform+%C2%B7+Kubernetes+%C2%B7+GitHub+Actions+%C2%B7+OIDC" alt="Typing intro: 3 years running cloud infrastructure in production; Azure OpenAI and AWS Bedrock on regulated data; 18 open-source research prototypes; 40+ pull requests merged upstream" /></a>
+<a href="#-pick-your-path"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=70A5FD&center=true&vCenter=true&width=720&height=50&lines=3+years+running+cloud+infrastructure+in+production;Azure+OpenAI+%2B+AWS+Bedrock+on+regulated+data;18+open-source+research+prototypes%2C+each+benchmarked;50%2B+pull+requests+merged+upstream;Terraform+%C2%B7+Kubernetes+%C2%B7+GitHub+Actions+%C2%B7+OIDC" alt="Typing intro: 3 years running cloud infrastructure in production; Azure OpenAI and AWS Bedrock on regulated data; 18 open-source research prototypes; 50+ pull requests merged upstream" /></a>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-0b1f3a?style=for-the-badge&logo=netlify&logoColor=white)](https://harshit-portfolio-3355.netlify.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/harshit555)
@@ -40,7 +40,7 @@ them on Medium, and contribute fixes upstream.
 - **Azure + AWS in production**: Container Apps, ECS Fargate, Terraform, GitHub Actions / Azure DevOps, OIDC, Entra SSO.
 - **AI infrastructure on regulated data**: Azure OpenAI and AWS Bedrock, ISO 27001 evidence, SOC 2 preparation.
 - **Certified**: AWS CloudOps Engineer – Associate, HashiCorp Terraform Associate (004).
-- **Proof beyond the day job**: two installable Kubernetes tools in Go (an Argo Rollouts canary plugin and a Vertical Pod Autoscaler memory recommender), 18 benchmarked open-source prototypes, 40+ PRs merged upstream, 10 technical articles.
+- **Proof beyond the day job**: two installable Kubernetes tools in Go (an Argo Rollouts canary plugin and a Vertical Pod Autoscaler memory recommender), 18 benchmarked open-source prototypes, 50+ PRs merged upstream, 10 technical articles.
 
 📬 [harshitnagila3355@gmail.com](mailto:harshitnagila3355@gmail.com) · [LinkedIn](https://linkedin.com/in/harshit555)
 
@@ -555,11 +555,15 @@ flowchart LR
 
 ## 🤝 Upstream open-source contributions
 
-**40+ pull requests merged** into other people's projects.
+**50+ pull requests merged** into other people's projects.
 [See every merged PR →](https://github.com/search?q=author%3Aharshit3355+is%3Apr+is%3Amerged+-user%3Aharshit3355&type=pullrequests)
 
 | Project | Contribution |
 | --- | --- |
+| [docker-library/official-images](https://github.com/docker-library/official-images/pull/22825) | `java-ca-certificates` test: ignore the HTTP status of the google.com request |
+| [docker-mailserver/docker-mailserver](https://github.com/docker-mailserver/docker-mailserver/pull/4868) | Apply `setup email restrict add send` on all ports, plus [re-apply `custom-commands.conf` when rspamd overrides change](https://github.com/docker-mailserver/docker-mailserver/pull/4869) |
+| [oliver006/redis_exporter](https://github.com/oliver006/redis_exporter/pull/1223) | Keep the Redis address out of the scrape error when it can't be parsed |
+| [MustacheCase/zanadir](https://github.com/MustacheCase/zanadir/pull/709) | Grade FOSSA as enforcing only when it runs `fossa test` |
 | [PrefectHQ/prefect](https://github.com/PrefectHQ/prefect/pull/24035) | Reject `--param` and `--job-variable` values without `=` in `prefect deployment run` |
 | [reviewdog/reviewdog](https://github.com/reviewdog/reviewdog/pull/3003) | Keep parsing after an errorformat line longer than 64 KiB |
 | [komodorio/helm-dashboard](https://github.com/komodorio/helm-dashboard/pull/775) | Report health for Pods that are Running, Succeeded or Failed |
