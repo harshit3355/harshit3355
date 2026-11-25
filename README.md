@@ -560,6 +560,8 @@ flowchart LR
 
 | Project | Contribution |
 | --- | --- |
+| [cdklabs/cdk-from-cfn](https://github.com/cdklabs/cdk-from-cfn/pull/1379) | Emit `Fn::FindInMap` for mapping lookups whose keys are only known at deploy time |
+| [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server/pull/4416) | Docs: say `LEVEL` maps to `level-name`, plus [fix the first note on the Raspberry Pi page](https://github.com/itzg/docker-minecraft-server/pull/4415) |
 | [docker-library/official-images](https://github.com/docker-library/official-images/pull/22825) | `java-ca-certificates` test: ignore the HTTP status of the google.com request |
 | [docker-mailserver/docker-mailserver](https://github.com/docker-mailserver/docker-mailserver/pull/4868) | Apply `setup email restrict add send` on all ports, plus [re-apply `custom-commands.conf` when rspamd overrides change](https://github.com/docker-mailserver/docker-mailserver/pull/4869) |
 | [oliver006/redis_exporter](https://github.com/oliver006/redis_exporter/pull/1223) | Keep the Redis address out of the scrape error when it can't be parsed |
