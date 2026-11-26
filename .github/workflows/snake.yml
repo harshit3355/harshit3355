@@ -43,31 +43,13 @@ jobs:
           path: dist/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Featured repo cards
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=policy-synapse&description_lines_count=3&show_owner=false&${{ env.CARD_COLORS }}
-          path: dist/pin-policy-synapse.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=hephaestus-ledger&description_lines_count=3&show_owner=false&${{ env.CARD_COLORS }}
-          path: dist/pin-hephaestus-ledger.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=aegis-nexus&description_lines_count=3&show_owner=false&${{ env.CARD_COLORS }}
-          path: dist/pin-aegis-nexus.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=chaos-witness&description_lines_count=3&show_owner=false&${{ env.CARD_COLORS }}
-          path: dist/pin-chaos-witness.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Keep the night-view calendar
+        run: cp profile-3d-contrib/profile-night-view.svg dist/3d-contrib.svg
 
       - name: Contribution snake
         uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0

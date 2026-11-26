@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e3a8a,100:7c3aed&height=230&section=header&text=Harshit%20Nagila&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=DevOps%20%C2%B7%20Cloud%20%C2%B7%20SRE%20%C2%B7%20DevSecOps&descSize=20&descAlignY=58&animation=fadeIn" alt="Harshit Nagila: DevOps, Cloud, SRE, DevSecOps" width="100%" />
-
-<a href="#-pick-your-path"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=70A5FD&center=true&vCenter=true&width=720&height=50&lines=3+years+running+cloud+infrastructure+in+production;Azure+OpenAI+%2B+AWS+Bedrock+on+regulated+data;18+open-source+research+prototypes%2C+each+benchmarked;50%2B+pull+requests+merged+upstream;Terraform+%C2%B7+Kubernetes+%C2%B7+GitHub+Actions+%C2%B7+OIDC" alt="Typing intro: 3 years running cloud infrastructure in production; Azure OpenAI and AWS Bedrock on regulated data; 18 open-source research prototypes; 50+ pull requests merged upstream" /></a>
+<a href="#-pick-your-path"><img src="assets/hero.svg" alt="Harshit Nagila: DevOps, Cloud, SRE, DevSecOps. Runs production AI infrastructure on Azure and AWS and builds Kubernetes tooling in the open." width="100%" /></a>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-0b1f3a?style=for-the-badge&logo=netlify&logoColor=white)](https://harshit-portfolio-3355.netlify.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/harshit555)
@@ -14,6 +12,8 @@
 </div>
 
 ## 👋 About me
+
+<img src="assets/glance.svg" alt="At a glance: 3 years of DevOps in production; 29 container apps across 3 environments; 10k+ requests a day; 2 Kubernetes tools in Go; 18 benchmarked prototypes; 50+ pull requests merged upstream" width="100%" />
 
 I'm a DevOps engineer with **3 years** in cloud infrastructure. In my current role I'm the sole DevOps
 engineer on **ciATHENA**, an agentic AI analytics platform for life-sciences clients. I took it from its
@@ -72,10 +72,20 @@ Each repo has its architecture diagram, the benchmark and the limits in its READ
 
 ## 🧰 Tools you can install
 
+<a href="https://github.com/harshit3355/rollouts-plugin-metric-sequential"><img src="assets/tool-rollouts.svg" alt="rollouts-plugin-metric-sequential: Argo Rollouts metric plugin in Go. Worst false-rollback rate 1.7%, against 30.6% for a z-test checked every interval and 99.2% for a 2x threshold rule." width="100%" /></a>
+
+<a href="https://github.com/harshit3355/vpa-recommender-oom-budget"><img src="assets/tool-vpa.svg" alt="vpa-recommender-oom-budget: VPA recommender in Go. Asked for 0.01 OOM kills per container-day, got 0.0101; asked 0.003, got 0.0030." width="100%" /></a>
+
+<details>
+<summary><b>Details, releases and limits</b></summary>
+<br/>
+
 | Project | What it does |
 | --- | --- |
 | [**rollouts-plugin-metric-sequential**](https://github.com/harshit3355/rollouts-plugin-metric-sequential) | Argo Rollouts metric plugin in Go. Aborts a canary when Prometheus error counts show a real regression, using a sequential test that stays valid however often Argo checks it. **Worst false rollback 1.7%, against 30.6% for a z-test checked every interval; a 2x regression is caught in about 7 intervals.** A kind end-to-end test in CI runs it inside the real Argo Rollouts controller. [v0.1.0](https://github.com/harshit3355/rollouts-plugin-metric-sequential/releases/tag/v0.1.0) ships with SHA-256 sums and SLSA build provenance. |
 | [**vpa-recommender-oom-budget**](https://github.com/harshit3355/vpa-recommender-oom-budget) | Alternative Vertical Pod Autoscaler recommender in Go. You set an OOM-kill budget and it sizes each container's memory to meet it, with one margin calibrated on the whole fleet's history. On a held-out sample of Google's public Borg trace (3,179 tasks), **asked for 0.01 OOM kills per container-day, got 0.0101; asked 0.003, got 0.0030.** It does not save memory: at the same OOM rate it needs within 2 to 4% of what VPA's and KRR's defaults need. A kind end-to-end test in CI runs it with the real VPA 1.8.1 updater and admission controller. [v0.1.0](https://github.com/harshit3355/vpa-recommender-oom-budget/releases/tag/v0.1.0) ships binaries, a container image, SHA-256 sums and SLSA build provenance. |
+
+</details>
 
 ---
 
@@ -85,18 +95,24 @@ Each repo has its architecture diagram, the benchmark and the limits in its READ
 baseline on a synthetic or simulated benchmark. Every README states the method, the numbers and the limits.
 
 <p align="center">
-  <a href="https://github.com/harshit3355/policy-synapse"><img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/pin-policy-synapse.svg" alt="policy-synapse" width="49%" /></a>
-  <a href="https://github.com/harshit3355/hephaestus-ledger"><img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/pin-hephaestus-ledger.svg" alt="hephaestus-ledger" width="49%" /></a>
-  <a href="https://github.com/harshit3355/aegis-nexus"><img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/pin-aegis-nexus.svg" alt="aegis-nexus" width="49%" /></a>
-  <a href="https://github.com/harshit3355/chaos-witness"><img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/pin-chaos-witness.svg" alt="chaos-witness" width="49%" /></a>
+  <a href="https://github.com/harshit3355/policy-synapse"><img src="assets/proj-policy-synapse.svg" alt="policy-synapse: injected policy bugs caught, boundary suite 708/708 against 403/708 for example tests" width="49%" /></a>
+  <a href="https://github.com/harshit3355/hephaestus-ledger"><img src="assets/proj-hephaestus-ledger.svg" alt="hephaestus-ledger: constructed provenance breaks flagged, provenance graph 19/19 against 1/19 for image signatures only" width="49%" /></a>
+  <a href="https://github.com/harshit3355/aegis-nexus"><img src="assets/proj-aegis-nexus.svg" alt="aegis-nexus: leakage after compromise, 7 weight-hours against 242,782 for token exchange without attenuation" width="49%" /></a>
+  <a href="https://github.com/harshit3355/chaos-witness"><img src="assets/proj-chaos-witness.svg" alt="chaos-witness: planted weaknesses found, 7/7 against 4/7 for a manual chaos checklist" width="49%" /></a>
+  <a href="https://github.com/harshit3355/faultweaver"><img src="assets/proj-faultweaver.svg" alt="faultweaver: unsafe automated actions across 240 incidents, 11 against 29 for the same agent without the gate" width="49%" /></a>
+  <a href="https://github.com/harshit3355/terracog"><img src="assets/proj-terracog.svg" alt="terracog: decision regret 0.59 against 2.75 for always reverting" width="49%" /></a>
 </p>
+
+<details>
+<summary><b>All 18 prototypes, by area</b></summary>
+<br/>
 
 **Security, supply chain and compliance**
 
 | Project | What it does |
 | --- | --- |
-| [**policy-synapse**](https://github.com/harshit3355/policy-synapse) | Tests one policy across CI, Kubernetes admission, Terraform plan and runtime Rego. **Caught 100% of 708 injected bugs; hand-written policies caught 56.9%.** |
-| [**hephaestus-ledger**](https://github.com/harshit3355/hephaestus-ledger) | Checks that every live AI deployment part (image, SBOM, Terraform state, model config, policy, identity) came from the approved release. **19/19 breaks caught; image signatures alone caught 1/19.** |
+| [**policy-synapse**](https://github.com/harshit3355/policy-synapse) | Tests one policy across CI, Kubernetes admission, Terraform plan and runtime Rego. **Caught 100% of 708 injected bugs; example tests caught 56.9%.** |
+| [**hephaestus-ledger**](https://github.com/harshit3355/hephaestus-ledger) | Checks that every live AI deployment part (image, SBOM, Terraform state, model config, policy, identity) came from the approved release. **Flags all 19 constructed provenance breaks; image signatures alone flag 1/19.** |
 | [**aegis-nexus**](https://github.com/harshit3355/aegis-nexus) | Narrows credentials at every hop when AI agents delegate to each other across clouds. **Leakage after compromise: 242,782 → 7 weight-hours.** |
 | [**janus-gate**](https://github.com/harshit3355/janus-gate) | Finds which GitHub Actions identities a cloud OIDC trust policy really accepts (AWS, Entra ID, GCP) and fails CI on the extras. |
 | [**chronos-keys**](https://github.com/harshit3355/chronos-keys) | Plans secret rotation in a safe order across caches, restarts and scheduled jobs. |
@@ -126,6 +142,8 @@ baseline on a synthetic or simulated benchmark. Every README states the method, 
 
 Also: [gh-oidc-trust-fixtures](https://github.com/harshit3355/gh-oidc-trust-fixtures) (labelled Terraform fixtures for OIDC trust-policy scanners) ·
 [llm-gateway-quota-overshoot](https://github.com/harshit3355/llm-gateway-quota-overshoot) (reproducible harness for a LiteLLM budget-overshoot bug)
+
+</details>
 
 ---
 
@@ -555,8 +573,14 @@ flowchart LR
 
 ## 🤝 Upstream open-source contributions
 
+<a href="https://github.com/search?q=author%3Aharshit3355+is%3Apr+is%3Amerged+-user%3Aharshit3355&type=pullrequests"><img src="assets/merged.svg" alt="Merged upstream into: Prefect, Docker official images, docker-mailserver, reviewdog, helm-dashboard, kubecolor, cdk-from-cfn, ScyllaDB python-driver, redis_exporter, vfox, kor, docker-minecraft-server, Kavita, Consolonia" width="100%" /></a>
+
 **50+ pull requests merged** into other people's projects.
 [See every merged PR →](https://github.com/search?q=author%3Aharshit3355+is%3Apr+is%3Amerged+-user%3Aharshit3355&type=pullrequests)
+
+<details>
+<summary><b>What each one changed</b></summary>
+<br/>
 
 | Project | Contribution |
 | --- | --- |
@@ -592,6 +616,8 @@ flowchart LR
 | [repo-engineering-skills](https://github.com/basitalisandhu/repo-engineering-skills/pull/10) | Verify environment defaults in docs ([+1 follow-up](https://github.com/basitalisandhu/repo-engineering-skills/pull/13)) |
 | [hettiger/clg](https://github.com/hettiger/clg/pull/24) | Configurable release timezone |
 | [adjective-rob/snap](https://github.com/adjective-rob/snap/pull/5) | Windows setup script |
+
+</details>
 
 ---
 
@@ -649,13 +675,7 @@ I write up each project on [Medium](https://medium.com/@harshitnagila555): the p
 
 ## 🎖️ Certifications
 
-![AWS CloudOps Engineer – Associate](https://img.shields.io/badge/AWS-CloudOps_Engineer_Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
-![HashiCorp Terraform Associate 004](https://img.shields.io/badge/HashiCorp-Terraform_Associate_004-844FBA?style=flat-square&logo=terraform&logoColor=white)
-![AWS Cloud Practitioner](https://img.shields.io/badge/AWS-Cloud_Practitioner-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Azure Fundamentals AZ-900](https://img.shields.io/badge/Microsoft-Azure_Fundamentals_AZ--900-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![OCI Foundations](https://img.shields.io/badge/Oracle-OCI_Foundations-F80000?style=flat-square&logo=oracle&logoColor=white)
-![Google Cybersecurity](https://img.shields.io/badge/Google-Cybersecurity_Professional-4285F4?style=flat-square&logo=google&logoColor=white)
-![IBM DevOps](https://img.shields.io/badge/IBM-DevOps_for_Enterprise_Agility-052FAD?style=flat-square&logo=ibm&logoColor=white)
+<img src="assets/certs.svg" alt="Certifications: AWS CloudOps Engineer – Associate; HashiCorp Terraform Associate (004); AWS Cloud Practitioner; Microsoft Azure Fundamentals (AZ-900); Oracle OCI Foundations; Google Cybersecurity Professional; IBM DevOps for Enterprise Agility" width="100%" />
 
 ---
 
@@ -667,7 +687,7 @@ I write up each project on [Medium](https://medium.com/@harshitnagila555): the p
   <img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/stats.svg" alt="GitHub stats" width="49%" />
   <img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/top-langs.svg" alt="Top languages" width="49%" />
   <br/><br/>
-  <img src="https://streak-stats.demolab.com/?user=harshit3355&background=0F172A&ring=7C3AED&fire=70A5FD&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=70A5FD&sideLabels=A5B4FC&dates=94A3B8&stroke=1E3A8A&hide_border=true&border_radius=12" alt="Contribution streak" width="70%" />
+  <img src="https://raw.githubusercontent.com/harshit3355/harshit3355/output/3d-contrib.svg" alt="3D contribution calendar, regenerated daily" width="100%" />
   <br/><br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/harshit3355/harshit3355/output/github-snake-dark.svg" />
@@ -683,8 +703,8 @@ I write up each project on [Medium](https://medium.com/@harshitnagila555): the p
 <sub>MCA, Manipal University Jaipur (CGPA 9.01) · BCA, Chandigarh University · Employee of the Quarter, Q1 2025<br/>
 Former GDSC Cloud Lead: taught cloud to 500+ students through hands-on workshops</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:1e3a8a,100:0f172a&height=120&section=footer" alt="" width="100%" />
+<img src="assets/footer.svg" alt="" width="100%" />
 
-<sub>Widgets: [GitSkins](https://www.gitskins.com) (Midnight) · [capsule-render](https://github.com/kyechan99/capsule-render) · [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) · [github-readme-stats](https://github.com/stats-organization/github-readme-stats-action) · [streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) · [Platane/snk](https://github.com/Platane/snk)</sub>
+<sub>Hero, cards and tiles are hand-built SVGs (`scripts/build_assets.py`) · Widgets: [GitSkins](https://www.gitskins.com) (Midnight) · [github-readme-stats](https://github.com/stats-organization/github-readme-stats-action) · [github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) · [Platane/snk](https://github.com/Platane/snk)</sub>
 
 </div>
