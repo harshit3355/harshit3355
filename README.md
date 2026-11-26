@@ -560,6 +560,7 @@ flowchart LR
 
 | Project | Contribution |
 | --- | --- |
+| [version-fox/vfox](https://github.com/version-fox/vfox/pull/819) | CI: check the formatting of the Go, Lua and Bash scripts |
 | [cdklabs/cdk-from-cfn](https://github.com/cdklabs/cdk-from-cfn/pull/1379) | Emit `Fn::FindInMap` for mapping lookups whose keys are only known at deploy time |
 | [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server/pull/4416) | Docs: say `LEVEL` maps to `level-name`, plus [fix the first note on the Raspberry Pi page](https://github.com/itzg/docker-minecraft-server/pull/4415) |
 | [docker-library/official-images](https://github.com/docker-library/official-images/pull/22825) | `java-ca-certificates` test: ignore the HTTP status of the google.com request |
